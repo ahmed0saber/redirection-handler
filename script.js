@@ -2,6 +2,7 @@ const redirectUrls = {
     'portfolio': 'https://ahmed0saber.pages.dev',
     'intern2grow': 'https://intern2grow.pages.dev',
     'qgame': 'https://qgame.pages.dev',
+    'const-solutions': 'https://const-solutions.pages.dev/',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
