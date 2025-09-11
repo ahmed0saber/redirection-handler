@@ -2,7 +2,7 @@ const redirectUrls = {
     'portfolio': 'https://ahmed0saber.pages.dev',
     'intern2grow': 'https://intern2grow.pages.dev',
     'qgame': 'https://qgame.pages.dev',
-    'const-solutions': 'https://const-solutions.pages.dev/',
+    'const-solutions': 'https://const-solutions.pages.dev',
     'calendar': 'https://ahmed0saber-calendar.pages.dev',
 };
 
@@ -14,8 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailsElement = document.getElementById('details');
 
     if (redirectId && redirectUrls[redirectId]) {
-        const targetUrl = redirectUrls[redirectId];
+        let targetUrl = redirectUrls[redirectId];
         detailsElement.textContent = `You are being securely redirected to your destination.`;
+        const redirectPath = urlParams.get('path');
+        if (redirectPath) {
+            targetUrl += redirectPath
+        }
         setTimeout(() => {
             window.location.replace(targetUrl);
         }, 3000);
