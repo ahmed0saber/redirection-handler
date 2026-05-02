@@ -4,6 +4,7 @@ const redirectUrls = {
     'qgame': 'https://qgame.pages.dev',
     'const-solutions': 'https://const-solutions.pages.dev',
     'calendar': 'https://ahmed0saber-calendar.pages.dev',
+    'gym-tracker': 'https://my-gym-tracker.pages.dev',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
