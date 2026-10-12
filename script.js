@@ -6,6 +6,7 @@ const redirectUrls = {
     'calendar': 'https://ahmed0saber-calendar.pages.dev',
     'gym-tracker': 'https://my-gym-tracker.pages.dev',
     'dev-duel': 'https://dev-duel.pages.dev',
+    'webcam-racing': 'https://webcam-controlled-racing-game.pages.dev',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
